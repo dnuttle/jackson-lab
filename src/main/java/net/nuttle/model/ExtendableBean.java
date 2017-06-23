@@ -29,4 +29,5 @@ public class ExtendableBean {
   public void put(String name, String value) {
     properties.put(name, value);
   }
+  
 }

@@ -1,3 +1,4 @@
+package net.nuttle.model;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,7 +17,6 @@ public class JsonAnyGetterTest {
     bean.put("prop1", "value1");
     bean.put("prop2", "value2");
     String result = mapper.writeValueAsString(bean);
-    System.out.println(result);
     JsonNode n = mapper.readTree(result);
     Assert.assertEquals("value1", n.get("prop1").asText());
     Assert.assertEquals("value2", n.get("prop2").asText());

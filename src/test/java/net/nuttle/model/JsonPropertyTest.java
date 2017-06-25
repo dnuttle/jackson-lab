@@ -1,3 +1,4 @@
+package net.nuttle.model;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -16,7 +17,6 @@ public class JsonPropertyTest {
     bean.setSpecificVariable("specificVariable");
     bean.prop3 = "alternate";
     String result = mapper.writeValueAsString(bean);
-    System.out.println(result);
     JsonNode node = mapper.readTree(result);
     Assert.assertEquals(3, node.size());
     bean = mapper.readValue(result, JsonPropertyBean.class);

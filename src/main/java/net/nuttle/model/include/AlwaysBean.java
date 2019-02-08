@@ -1,6 +1,5 @@
 package net.nuttle.model.include;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 /*
